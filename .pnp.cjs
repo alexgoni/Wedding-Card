@@ -39,6 +39,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__jest-dom", "npm:5.14.9"],\
             ["classnames", "npm:2.3.2"],\
             ["craco-alias", "npm:3.0.1"],\
+            ["date-fns", "npm:3.3.1"],\
             ["eslint", "npm:8.57.0"],\
             ["eslint-config-prettier", "virtual:986a6bc4af22e1fca94d1812d13925f20b7d040e67184e2a32e903bac5e993a3c354d148626bbf4038463a3efbb7b501d878dbc8327069ce4808dd0f30d49662#npm:9.1.0"],\
             ["eslint-config-react-app", "virtual:986a6bc4af22e1fca94d1812d13925f20b7d040e67184e2a32e903bac5e993a3c354d148626bbf4038463a3efbb7b501d878dbc8327069ce4808dd0f30d49662#npm:7.0.1"],\
@@ -7919,6 +7920,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["abab", "npm:2.0.6"],\
             ["whatwg-mimetype", "npm:2.3.0"],\
             ["whatwg-url", "npm:8.7.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["date-fns", [\
+        ["npm:3.3.1", {\
+          "packageLocation": "./.yarn/cache/date-fns-npm-3.3.1-794b72f5e7-6245e93a47.zip/node_modules/date-fns/",\
+          "packageDependencies": [\
+            ["date-fns", "npm:3.3.1"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -18855,6 +18865,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/testing-library__jest-dom", "npm:5.14.9"],\
             ["classnames", "npm:2.3.2"],\
             ["craco-alias", "npm:3.0.1"],\
+            ["date-fns", "npm:3.3.1"],\
             ["eslint", "npm:8.57.0"],\
             ["eslint-config-prettier", "virtual:986a6bc4af22e1fca94d1812d13925f20b7d040e67184e2a32e903bac5e993a3c354d148626bbf4038463a3efbb7b501d878dbc8327069ce4808dd0f30d49662#npm:9.1.0"],\
             ["eslint-config-react-app", "virtual:986a6bc4af22e1fca94d1812d13925f20b7d040e67184e2a32e903bac5e993a3c354d148626bbf4038463a3efbb7b501d878dbc8327069ce4808dd0f30d49662#npm:7.0.1"],\
