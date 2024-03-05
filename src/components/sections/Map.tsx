@@ -1,6 +1,6 @@
 import { Location } from '@/models/wedding'
 import classNames from 'classnames/bind'
-import { useEffect, useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Section from '../shared/Section'
 import styles from './Map.module.scss'
 
@@ -14,8 +14,10 @@ const cx = classNames.bind(styles)
 
 export default function Map({ location }: { location: Location }) {
   const mapContainer = useRef(null)
+  const [isMapRendered, setIsMapRendered] = useState<boolean>(false)
 
   useEffect(() => {
+    if (isMapRendered) return
     const script = document.createElement('script')
     script.src = `https://dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.REACT_APP_KAKAO_APP_KEY}&autoload=false`
     script.async = true
@@ -23,7 +25,6 @@ export default function Map({ location }: { location: Location }) {
     document.head.appendChild(script)
 
     script.onload = () => {
-      console.log(script)
       window.kakao.maps.load(() => {
         const position = new window.kakao.maps.LatLng(
           location.lat,
@@ -38,6 +39,7 @@ export default function Map({ location }: { location: Location }) {
         const marker = new window.kakao.maps.Marker({ position })
         const map = new window.kakao.maps.Map(mapContainer.current, options)
         marker.setMap(map)
+        setIsMapRendered(true)
       })
     }
   }, [location])
