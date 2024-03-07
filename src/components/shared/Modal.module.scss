@@ -1,0 +1,40 @@
+@import '@scss/variable.scss';
+
+.wrap-modal {
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+  border-radius: 8px;
+  z-index: $modal-zindex;
+  .wrap-body {
+    width: 320px;
+    .wrap-content {
+      padding: 18px;
+      .txt-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 18px;
+      }
+    }
+    .wrap-buttons {
+      display: flex;
+      button {
+        flex: 1;
+        font-size: 17px;
+        padding: 15px 28px;
+        font-weight: bold;
+        cursor: pointer;
+        &:nth-child(1) {
+          background-color: var(--beige);
+        }
+        &:nth-child(2) {
+          background-color: var(--black);
+          color: #fff;
+        }
+      }
+    }
+  }
+}
